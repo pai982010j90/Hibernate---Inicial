@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hibernate1.Libro" table="libro">
+        <id name="id" type="int" unsaved-value="null">
+            <column name="id" sql-type="int" not-null="true"/>
+            <generator class="hilo"/>
+        </id>
+        <property name="titulo" type="string"/>
+        <property name="fechaPublicacion" type="date"/>
+        <property name="precio" type="float"/>
+    </class>
+</hibernate-mapping>
